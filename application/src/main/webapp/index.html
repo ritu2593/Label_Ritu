@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+
+		<title>Generate Label</title>
+
+		<script id="sap-ui-bootstrap"
+			src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m,sap.ui.unified"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{"labelPrintLabelMasterDetail": ""}'>
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script>
+		sap.ui.getCore().attachInit(function() {
+			new sap.ui.unified.Shell({
+				icon: "Company_Logo.png",
+				search: new sap.m.Text({
+					width: "300px",	
+					textAlign: "Center",
+					text : "Label Print Cockpit"	
+					}).addStyleClass("labelHeader"),
+				user: new sap.ui.unified.ShellHeadUserItem({image:"clark.png",username:"Clark, The Clerk"}),
+				content: new sap.ui.core.ComponentContainer({
+					height : "100%",
+					name : "labelPrintLabelMasterDetail"
+				})
+			}).placeAt("content");
+		});
+		</script>
+	</head>
+
+	<body class="sapUiBody" id="content1">
+	<a id="dwnldLnk" download='o ficheirinho de tostas.pdf' style="display:none;"> </a> 
+	<div id="content"></div>
+	</body>
+
+</html>

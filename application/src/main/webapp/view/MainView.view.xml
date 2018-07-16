@@ -1,0 +1,140 @@
+<mvc:View controllerName="labelPrintLabelMasterDetail.controller.MainView" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"  xmlns:f="sap.ui.layout.form">
+	<App>
+		<pages>
+			<Page title="{i18n>title}" showHeader ="false">
+				<content>
+					<SplitApp id="SplitAppDemo" initialDetail="detail" initialMaster="master">
+						<detailPages>
+							<Page id="detail" visible="false" title="Delivery Document" busy="{ViewModel>/detailBusy}" class="sapUiStdPage">
+								<content>
+									<ObjectHeader id="objectHeader" title="{detailModel>/DeliveryDocument}" number="Ship To Party: {detailModel>/ShipToParty}">
+										<statuses>
+											<ObjectStatus type = "Success" class = "fontsize" text="{= ${detailModel>/OverallPickingStatus} === 'C' ? 'Ready To Print' : ${detailModel>/OverallPickingStatus}}" state="Success"/>
+										</statuses>
+										<attributes>
+											<ObjectAttribute
+												text="Document Date: { path: 'detailModel>/DocumentDate', type: 'sap.ui.model.type.Date', formatOptions:{pattern: 'dd/MM/yy'} }"/>
+											<ObjectAttribute
+												text="Picking Date: { path: 'detailModel>/PickingDate', type: 'sap.ui.model.type.Date', formatOptions:{pattern: 'dd/MM/yy'} }"/>
+										</attributes>
+									</ObjectHeader>
+									<IconTabBar id="idIconTabBarMulti" expanded="{device>/isNoPhone}" class="sapUiResponsiveContentPadding">
+										<items>
+											<IconTabFilter icon="sap-icon://hint">
+									<Table id="idDeliveryItem" class="sapUiTinyMarginTop" inset="false" visible="true" items="{ path: 'detailModel>/results/' }">
+										<headerToolbar>
+											<Toolbar>
+												<Title text="Document Items" level="H2"/>
+											</Toolbar>
+										</headerToolbar>
+										<columns>
+											<Column width="12em">
+												<Text text="Item No"/>
+											</Column>
+											<Column width="12em">
+												<Text text="Material"/>
+											</Column>
+											<Column minScreenWidth="Tablet" demandPopin="true">
+												<Text text="Plant"/>
+											</Column>
+											<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+												<Text text="Storage Location"/>
+											</Column>
+											<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+												<Text text="Delivery Qty"/>
+											</Column>
+											<Column hAlign="Center">
+												<Text text="Unit"/>
+											</Column>
+										</columns>
+										<items>
+											<ColumnListItem>
+												<cells>
+													<Text text="{detailModel>DeliveryDocumentItem}"/>
+													<Text text="{detailModel>Material}"/>
+													<Text text="{detailModel>Plant}"/>
+													<Text text="{detailModel>StorageLocation}"/>
+													<Text text="{detailModel>ActualDeliveredQtyInBaseUnit}"/>
+													<Text text="{detailModel>DeliveryQuantityUnit}"/>
+												</cells>
+											</ColumnListItem>
+										</items>
+									</Table>
+									</IconTabFilter>
+											<IconTabFilter icon="sap-icon://group">
+												<VBox class="sapUiSmallMargin">
+													<f:SimpleForm id="SimpleFormDisplay354" editable="false" layout="ResponsiveGridLayout" title="Address" labelSpanXL="3" labelSpanL="3"
+														labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1"
+														columnsL="1" columnsM="1" singleContainerFullSize="false">
+														<f:content>
+															<Label text="Name"/>
+															<Text id="nameText" text="{detailBusModel>/BusinessPartnerFullName}"/>
+															<Label text="Street/No."/>
+															<Text text="{detailBusModel>/to_BusinessPartnerAddress/0/HouseNumber} {detailBusModel>/to_BusinessPartnerAddress/0/StreetName}"/>
+															<Label text="ZIP Code/City"/>
+															<Text text="{detailBusModel>/to_BusinessPartnerAddress/0/PostalCode} {detailBusModel>/to_BusinessPartnerAddress/0/CityName}"/>
+															<Label text="Country"/>
+															<Text id="countryText" text="{detailBusModel>/to_BusinessPartnerAddress/0/Country}"/>
+														</f:content>
+													</f:SimpleForm>
+												</VBox>
+											</IconTabFilter>
+										</items>
+									</IconTabBar>
+								</content>
+								<footer>
+									<OverflowToolbar>
+										<ToolbarSpacer/>
+										<Button text="Print Label" type="Emphasized" press="onHandlingUnit"/>
+									</OverflowToolbar>
+								</footer>
+							</Page>
+						</detailPages>
+						<masterPages>
+							<Page id="master" title="All Delivery Documents">
+								<subHeader>
+									<Toolbar>
+										<Bar id="headerBar">
+											<contentMiddle>
+												<SearchField id="searchField" showRefreshButton="{= !${device>/support/touch} }" width="100%" search="onSearch"></SearchField>
+											</contentMiddle>
+										</Bar>
+									</Toolbar>
+								</subHeader>
+								<content>
+									<PullToRefresh id="pullToRefresh" visible="{device>/support/touch}" refresh="onRefresh"/>
+									<List id="list" items="{ path: 'MasterModel>/',filters : [{
+									            path: 'ShipToParty',
+									            operator: 'EQ',
+									            value1: '1000006'
+									            }] }" busy="{ViewModel>/masterBusy}" noDataText="{masterView>/noDataText}"
+										mode="{= ${device>/system/phone} ? 'None' : 'SingleSelectMaster'}" growing="true" growingScrollToLoad="true"
+										selectionChange="onSelectionChange">
+										<items>
+											<CustomListItem type="Navigation">
+											<!--<ObjectListItem type="{= ${device>/system/phone} ? 'Active' : 'Inactive'}" press="onSelectionChange" title="{MasterModel>DeliveryDocument}"
+												number="{= ${MasterModel>OverallPickingStatus} === 'C' ? 'Ready To Print' : ${MasterModel>OverallPickingStatus}}"
+												></ObjectListItem>-->
+											<FlexBox class = "sapUiSmallMargin" alignItems="Start" justifyContent="SpaceBetween">
+												<items>
+													<Title level="H4" text="{MasterModel>DeliveryDocument}"/>
+													<Text class = "fontcolor" text="{= ${MasterModel>OverallPickingStatus} === 'C' ? 'Ready To Print' : 'Not Complete'}"/>
+												</items>
+											</FlexBox>
+											</CustomListItem>
+										</items>
+									</List>
+								</content>
+								<footer>
+									<OverflowToolbar/>
+								</footer>
+							</Page>
+						</masterPages>
+					</SplitApp>
+				</content>
+				
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

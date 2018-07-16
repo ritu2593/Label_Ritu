@@ -1,0 +1,10 @@
+/* Enter your custom styles here */
+.labelHeader{
+	font-size: 20px;
+}
+.fontcolor,.fontsize span{
+	font-weight: bold;
+}
+.fontcolor{
+	color: green;
+}

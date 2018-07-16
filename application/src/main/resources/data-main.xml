@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form1>
+   <Sample-Barcode>
+      <MaterialbyCustomer>12345678</MaterialbyCustomer>
+      <ActualDeliveryQuantity>654321</ActualDeliveryQuantity>
+      <OrderID>XXXXXXX</OrderID>
+      <WarehouseGate>1234</WarehouseGate>
+      <ReceivingPlant>21036</ReceivingPlant>
+      <AccountByCustomer>1234567890</AccountByCustomer>
+   </Sample-Barcode>
+</form1>

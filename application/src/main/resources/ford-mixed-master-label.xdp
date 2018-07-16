@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="AdobeLiveCycleDesigner_V11.0.1.20140218.1.907162" APIVersion="3.6.13324.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2018-07-04T13:34:45Z" uuid="10f4602f-048c-4ebf-81f7-4bc93912316f">
+<template xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
+   <?formServer defaultPDFRenderFormat acrobat10.0dynamic?>
+   <?formServer allowRenderCaching 0?>
+   <?formServer formModel both?>
+   <subform name="label" layout="tb" locale="en_US" restoreState="auto">
+      <pageSet name="FordMixedMasterLabel">
+         <pageArea name="Page" id="Page1">
+            <contentArea x="0.25in" y="0.25in" w="576pt" h="756pt" name="Content"/>
+            <medium stock="default" short="612pt" long="792pt"/>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform w="576pt" h="756pt" name="FormData">
+         <bind match="none"/>
+         <draw name="Rectangle1" y="3.23mm" x="3.23mm" w="152.4mm" h="101.6mm">
+            <value>
+               <rectangle>
+                  <edge/>
+                  <corner radius="5.08mm"/>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="Line1" y="15.931mm" x="3.25mm" w="109.2mm" h="=0mm">
+            <value>
+               <line/>
+            </value>
+         </draw>
+         <draw name="Line1" y="41.541mm" x="3.251mm" w="152.4mm" h="=0mm">
+            <value>
+               <line/>
+            </value>
+         </draw>
+         <draw name="Line1" y="66.52mm" x="3.21mm" w="152.4mm" h="=0mm">
+            <value>
+               <line/>
+            </value>
+         </draw>
+         <draw name="Line1" y="79.22mm" x="3.23mm" w="152.4mm" h="=0mm">
+            <value>
+               <line/>
+            </value>
+         </draw>
+         <draw name="Line2" y="16.09mm" x="60.8mm" w="0in" h="25.4mm">
+            <value>
+               <line slope="/"/>
+            </value>
+         </draw>
+         <draw name="Line2" y="66.653mm" x="79.85mm" w="0in" h="12.7mm">
+            <value>
+               <line slope="/"/>
+            </value>
+         </draw>
+         <draw name="Line2" y="79.35mm" x="90.01mm" w="0in" h="25.4mm">
+            <value>
+               <line slope="/"/>
+            </value>
+         </draw>
+         <draw name="Text1" y="3.4mm" x="3.83mm" w="14.18mm" h="4.87mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>SUPP (V)</text>
+            </value>
+            <font size="6pt" typeface="Arial" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 37361 10971 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 8 SUPP (V) 0 1417 6154 0 0 0 "Arial" 0 0 6000 ISO-8859-1?></draw>
+         <field name="MaterialbyCustomer" y="2.14mm" x="17.53mm" w="37.523mm" h="5.08mm" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font size="8pt" typeface="Arial"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle" hAlign="right"/>
+            <caption reserve="0.01in">
+               <para vAlign="middle" hAlign="right"/>
+            </caption>
+            <value>
+               <text> Warn Industries, Inc.</text>
+            </value>
+            <bind match="none"/>
+         </field>
+         <field name="MaterialbyCustomer" y="5.613mm" x="19.45mm" w="33.467mm" h="10.16mm">
+            <ui>
+               <barcode type="code128" wideNarrowRatio="fixed" checksum="auto" textLocation="none" dataLength="0"/>
+            </ui>
+            <font typeface="Courier New"/>
+            <value>
+               <text>12345678</text>
+            </value>
+            <bind match="none"/>
+         </field>
+         <field name="TextField1" y="3.214mm" x="61.042mm" w="50.296mm" h="14.702mm" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font size="32pt" typeface="Arial" weight="bold"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle" hAlign="center"/>
+            <caption reserve="0.01in">
+               <para vAlign="middle" hAlign="center"/>
+            </caption>
+            <value>
+               <text>PP03B</text>
+            </value>
+            <bind match="none"/>
+         </field>
+         <draw name="Text1" y="4.658mm" x="113.202mm" w="40.466mm" h="6.794mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>MIXED-MASTER</text>
+            </value>
+            <font size="12pt" typeface="Arial" weight="bold" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt" hAlign="center"/>
+            <?renderCache.bounds 111873 16425 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 12 MIXED-MASTER 0 11020 10892 0 0 0 "Arial" 1 0 12000 ISO-8859-1?></draw>
+         <draw name="Text1" y="16.774mm" x="3.83mm" w="14.18mm" h="4.87mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>QTY (Q)</text>
+            </value>
+            <font size="6pt" typeface="Arial"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <?renderCache.bounds 37361 10971 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 7 QTY (Q) 0 1417 6154 0 0 0 "Arial" 0 0 6000 ISO-8859-1?></draw>
+         <field name="ActualDeliveryQuantity" y="30.14mm" x="13.123mm" w="24.811mm" h="10.16mm">
+            <ui>
+               <barcode type="code128" wideNarrowRatio="fixed" checksum="auto" textLocation="none" dataLength="0"/>
+            </ui>
+            <font typeface="Courier New"/>
+            <bind match="dataRef" ref="$.FordMixedMasterLabel.ActualDeliveryQuantity"/>
+         </field>
+         <field name="ActualDeliveryQuantity" y="16.27mm" x="40.923mm" w="19.485mm" h="15.62mm" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font size="36pt" typeface="Arial" weight="bold"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle" hAlign="right"/>
+            <caption reserve="0.01in">
+               <para vAlign="middle" hAlign="right"/>
+            </caption>
+            <bind match="dataRef" ref="$.FordMixedMasterLabel.ActualDeliveryQuantity"/>
+         </field>
+         <field name="TextField1" y="85.58mm" x="121.498mm" w="33.68mm" h="19.226mm" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font size="48pt" typeface="Arial" weight="bold"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle" hAlign="right"/>
+            <caption reserve="0.01in">
+               <para vAlign="middle" hAlign="right"/>
+            </caption>
+            <value>
+               <text>WD</text>
+            </value>
+            <bind match="none"/>
+         </field>
+         <field name="MaterialbyCustomer" y="40.948mm" x="2.794mm" w="152.232mm" h="15.912mm" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font size="36pt" typeface="Arial" weight="bold"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle" hAlign="center"/>
+            <caption reserve="0.01in">
+               <para vAlign="middle" hAlign="center"/>
+            </caption>
+            <bind match="dataRef" ref="$.FordMixedMasterLabel.MaterialbyCustomer"/>
+         </field>
+         <field name="DeliveryQuantityUnit" y="35.39mm" x="52.562mm" w="8.304mm" h="6.096mm" access="readOnly">
+            <ui>
+               <textEdit/>
+            </ui>
+            <font typeface="Arial"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <bind match="dataRef" ref="$.FordMixedMasterLabel.DeliveryQuantityUnit"/>
+         </field>
+         <draw name="Text1" y="16.824mm" x="61.722mm" w="17.621mm" h="4.87mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>CONTAINER</text>
+            </value>
+            <font size="6pt" typeface="Arial"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <?renderCache.bounds 47115 10971 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 9 CONTAINER 0 1417 6154 0 0 0 "Arial" 0 0 6000 ISO-8859-1?></draw>
+         <field name="TextField1" y="17.428mm" x="61.336mm" w="48.818mm" h="9.63mm" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font size="14pt" typeface="Arial" weight="bold"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <caption reserve="0.01in">
+               <para vAlign="middle"/>
+            </caption>
+            <value>
+               <text>SK32 C630L</text>
+            </value>
+            <bind match="none"/>
+         </field>
+         <field name="TextField1" y="91.89mm" x="90.03mm" w="26.953mm" h="11.91mm" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font size="18pt" typeface="Arial" weight="bold"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle" hAlign="center"/>
+            <caption reserve="0.01in">
+               <para vAlign="middle" hAlign="center"/>
+            </caption>
+            <value>
+               <text>AP16A</text>
+            </value>
+            <bind match="none"/>
+         </field>
+         <field name="TextField1" y="69.766mm" x="4.882mm" w="59.72mm" h="10.924mm" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font size="24pt" typeface="Arial" weight="bold"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <caption reserve="0.01in">
+               <para vAlign="middle"/>
+            </caption>
+            <value>
+               <text>2D33B75A-1</text>
+            </value>
+            <bind match="none"/>
+         </field>
+         <field name="TextField1" y="88.264mm" x="32.258mm" w="23.704mm" h="7.322mm" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Arial" size="12pt"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <caption reserve="0.01in">
+               <para vAlign="middle"/>
+            </caption>
+            <value>
+               <text>0AAC2195</text>
+            </value>
+            <bind match="none"/>
+         </field>
+         <field name="DeliveryDocument" y="69.236mm" x="80.542mm" w="34.616mm" h="11.79mm" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font size="14pt" typeface="Arial" weight="bold"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <caption reserve="0.01in">
+               <para vAlign="middle"/>
+            </caption>
+            <bind match="dataRef" ref="$.FordMixedMasterLabel.DeliveryDocument"/>
+         </field>
+         <field name="ShipToParty" y="79.514mm" x="89.632mm" w="45.41mm" h="9.63mm" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font size="6pt" typeface="Arial"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <caption reserve="0.01in">
+               <para vAlign="middle"/>
+            </caption>
+            <bind match="dataRef" ref="$.FordMixedMasterLabel.ShipToParty"/>
+         </field>
+         <draw name="Text1" y="25.548mm" x="61.722mm" w="18.56mm" h="4.87mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>GROSS WGT</text>
+            </value>
+            <font size="6pt" typeface="Arial" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 49777 10971 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 9 GROSS WGT 0 1417 6154 0 0 0 "Arial" 0 0 6000 ISO-8859-1?></draw>
+         <field name="ItemGrossWeight" y="27.202mm" x="61.336mm" w="20.37mm" h="7.608mm" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font size="14pt" typeface="Arial" weight="bold"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <caption reserve="0.01in">
+               <para vAlign="middle"/>
+            </caption>
+            <bind match="dataRef" ref="$.FordMixedMasterLabel.ItemGrossWeight"/>
+         </field>
+         <draw name="Text1" y="33.734mm" x="61.662mm" w="18.56mm" h="4.87mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>DATE</text>
+            </value>
+            <font size="6pt" typeface="Arial" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 49777 10971 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 4 DATE 0 1417 6154 0 0 0 "Arial" 0 0 6000 ISO-8859-1?></draw>
+         <field name="LoadingDate" y="35.306mm" x="61.276mm" w="29.579mm" h="7.614mm" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font size="14pt" typeface="Arial" weight="bold"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <caption reserve="0.01in">
+               <para vAlign="middle"/>
+            </caption>
+            <bind match="dataRef" ref="$.FordMixedMasterLabel.LoadingDate"/>
+         </field>
+         <draw name="Text1" y="34.002mm" x="93.648mm" w="18.56mm" h="4.87mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>LOT/BATCH</text>
+            </value>
+            <font size="6pt" typeface="Arial" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 49777 10971 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 9 LOT/BATCH 0 1417 6154 0 0 0 "Arial" 0 0 6000 ISO-8859-1?></draw>
+         <field name="Batch" y="35.656mm" x="93.262mm" w="19.186mm" h="6.692mm" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Arial"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <caption reserve="0.01in">
+               <para vAlign="middle"/>
+            </caption>
+            <bind match="dataRef" ref="$.FordMixedMasterLabel.Batch"/>
+         </field>
+         <draw name="Text1" y="62.058mm" x="3.83mm" w="14.18mm" h="4.862mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>PART (P)</text>
+            </value>
+            <font size="6pt" typeface="Arial"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <?renderCache.bounds 37361 10948 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 8 PART (P) 0 1417 6154 0 0 0 "Arial" 0 0 6000 ISO-8859-1?></draw>
+         <draw name="Text1" y="67.86mm" x="3.83mm" w="16.572mm" h="4.87mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>STR LOC 1</text>
+            </value>
+            <font size="6pt" typeface="Arial"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <?renderCache.bounds 44142 10971 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 9 STR LOC 1 0 1417 6154 0 0 0 "Arial" 0 0 6000 ISO-8859-1?></draw>
+         <draw name="Text1" y="67.65mm" x="80.346mm" w="34.989mm" h="3.728mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Delivery Doc/ASN Number (N)</text>
+            </value>
+            <font size="6pt" typeface="Arial"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <?renderCache.bounds 96347 7734 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 27 Delivery Doc/ASN Number (N) 0 1417 6154 0 0 0 "Arial" 0 0 6000 ISO-8859-1?></draw>
+         <draw name="Text1" y="89.354mm" x="3.831mm" w="22.629mm" h="4.646mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>SERIAL NO (S)</text>
+            </value>
+            <font size="6pt" typeface="Arial"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <?renderCache.bounds 61311 10336 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 13 SERIAL NO (S) 0 1417 6154 0 0 0 "Arial" 0 0 6000 ISO-8859-1?></draw>
+         <draw name="Text1" y="80.178mm" x="90.506mm" w="18.644mm" h="4.408mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>TO</text>
+            </value>
+            <font size="6pt" typeface="Arial"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <?renderCache.bounds 50015 9661 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 2 TO 0 1417 6154 0 0 0 "Arial" 0 0 6000 ISO-8859-1?></draw>
+         <draw name="Text1" y="91.018mm" x="90.17mm" w="26.813mm" h="4.516mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>CUST</text>
+            </value>
+            <font size="6pt" typeface="Arial"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para hAlign="center"/>
+            <?renderCache.bounds 73171 9967 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 4 CUST 0 29836 6154 0 0 0 "Arial" 0 0 6000 ISO-8859-1?></draw>
+         <draw name="Text1" y="80.312mm" x="136.884mm" w="18.644mm" h="4.87mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>DOCK CODE</text>
+            </value>
+            <font size="6pt" typeface="Arial"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para hAlign="right"/>
+            <?renderCache.bounds 50015 10971 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 9 DOCK CODE 0 15095 6154 0 0 0 "Arial" 0 0 6000 ISO-8859-1?></draw>
+         <field name="MaterialbyCustomer" y="55.398mm" x="22.266mm" w="92.8mm" h="10.16mm">
+            <ui>
+               <barcode type="code128" wideNarrowRatio="fixed" checksum="auto" textLocation="none" dataLength="0"/>
+            </ui>
+            <font typeface="Courier New"/>
+            <bind match="dataRef" ref="$.FordMixedMasterLabel.MaterialbyCustomer"/>
+         </field>
+         <field name="MaterialbyCustomer" y="93.72mm" x="15.498mm" w="36.4mm" h="10.16mm">
+            <ui>
+               <barcode type="code128" wideNarrowRatio="fixed" checksum="auto" textLocation="none" dataLength="0"/>
+            </ui>
+            <font typeface="Courier New"/>
+            <value>
+               <text>0AAC2195</text>
+            </value>
+            <bind match="none"/>
+         </field>
+         <field name="PDF417BarCode1" y="10.342mm" x="111.674mm" w="43.488mm" h="20.32mm" access="readOnly">
+            <ui>
+               <barcode type="pdf417" dataLength="10" moduleWidth="0.0133in" moduleHeight="0.02661in" errorCorrectionLevel="5"/>
+            </ui>
+            <value>
+               <text>1234567890</text>
+            </value>
+            <bind match="none"/>
+         </field>
+         <field name="DeliveryDocument" y="68.212mm" x="118.778mm" w="32.83mm" h="10.16mm">
+            <ui>
+               <barcode type="code128" wideNarrowRatio="fixed" checksum="auto" textLocation="none" dataLength="0"/>
+            </ui>
+            <font typeface="Courier New"/>
+            <bind match="dataRef" ref="$.FordMixedMasterLabel.DeliveryDocument"/>
+         </field>
+         <?templateDesigner expand 0?></subform>
+      <proto/>
+      <desc>
+         <text name="version">11.0.1.20140218.1.907162.903801</text>
+      </desc>
+      <?templateDesigner expand 0?>
+      <?templateDesigner Hyphenation excludeInitialCap:1, excludeAllCaps:1, wordCharCnt:7, remainCharCnt:3, pushCharCnt:3?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 192 48 0003000B000C000F001100120013001400150018001C00240025002600270028002A002B002C002E002F003100320033003400350036003700380039003A003C00440045004600470048004C004F00500051005200550056005700580059005C (),./01259ABCDEGHIKLNOPQRSTUVWYabcdeilmnorstuvy?>
+      <?renderCache.subset "Arial" 1 0 ISO-8859-1 4 96 24 00030010001300140015001600180019001A00240025002600270028002C002E002F00300033003500360037003A003B -0123567ABCDEIKLMPRSTWX?>
+      <?renderCache.subset "Courier New" 0 0 ISO-8859-1 4 48 12 0013001400150016001700180019001A001B001C002400260123456789AC?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner WidowOrphanControl 0?>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-template/3.3/?>
+   <?templateDesigner Grid show:1, snap:0, units:3, color:ff8080, origin:(0,0), interval:(18000,18000), objsnap:0, guidesnap:0, pagecentersnap:0?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?templateDesigner DefaultRunAt client?>
+   <?acrobat JavaScript strictScoping?>
+   <?PDFPrintOptions embedViewerPrefs 0?>
+   <?PDFPrintOptions embedPrintOnFormOpen 0?>
+   <?PDFPrintOptions scalingPrefs 0?>
+   <?PDFPrintOptions enforceScalingPrefs 0?>
+   <?PDFPrintOptions paperSource 0?>
+   <?PDFPrintOptions duplexMode 0?>
+   <?templateDesigner DefaultPreviewType interactive?>
+   <?templateDesigner DefaultPreviewPagination simplex?>
+   <?templateDesigner XDPPreviewFormat 20?>
+   <?templateDesigner DefaultPreviewDataFileName ford-mixed-master-label.xml?>
+   <?templateDesigner DefaultCaptionFontSettings face:Myriad Pro;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Myriad Pro;size:10;weight:normal;style:normal?>
+   <?templateDesigner FormTargetVersion 33?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Guidelines v:7200;v:266043;h:86797;h:254160;h:44152;h:60004?>
+   <?templateDesigner Zoom 120?>
+   <?templateDesigner SaveTaggedPDF 0?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 0?>
+   <?templateDesigner SavePDFWithLog 0?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <tagged>0</tagged>
+         <fontInfo>
+            <embed>0</embed>
+         </fontInfo>
+         <version>1.7</version>
+         <adobeExtensionLevel>8</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <script>
+         <runScripts>server</runScripts>
+      </script>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+</config>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale name="en_US" desc="English (United States)">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, MMMM D, YYYY</datePattern>
+         <datePattern name="long">MMMM D, YYYY</datePattern>
+         <datePattern name="med">MMM D, YYYY</datePattern>
+         <datePattern name="short">M/D/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99|($z,zz9.99)</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">USD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="label">
+      <label>
+         <FordMixedMasterLabel>
+            <ActualDeliveryQuantity/>
+            <DeliveryQuantityUnit/>
+            <ItemGrossWeight/>
+            <LoadingDate/>
+            <Batch/>
+            <MaterialbyCustomer/>
+            <DeliveryDocument/>
+            <ShipToParty/>
+         </FordMixedMasterLabel>
+      </label>
+   </dd:dataDescription>
+</xfa:datasets>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xmlConnection name="DataConnection" dataDescription="label">
+      <uri>.\ford-mixed-master-label.xml</uri>
+      <?templateDesigner fileDigest shaHash="G+qRMtA9Nn3Mb2sCmea5itVtC78="?></xmlConnection>
+</connectionSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.4-c005 78.150055, 2013/08/07-22:58:47        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <xmp:MetadataDate>2018-07-04T13:34:45Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer 11.0</xmp:CreatorTool>
+         <pdf:Producer>Adobe LiveCycle Designer 11.0</pdf:Producer>
+         <xmpMM:DocumentID>uuid:10f4602f-048c-4ebf-81f7-4bc93912316f</xmpMM:DocumentID>
+         <xmpMM:InstanceID>uuid:64c6b8f6-08b2-4c2a-ad8f-4630f2674776</xmpMM:InstanceID>
+         <dc:format>application/pdf</dc:format>
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>11.0.1.20140218.1.907162.903801</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+<xfdf xmlns="http://ns.adobe.com/xfdf/" xml:space="preserve">
+   <annots/>
+</xfdf></xdp:xdp>

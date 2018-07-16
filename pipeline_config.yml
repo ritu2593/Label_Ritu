@@ -1,0 +1,51 @@
+#Project Setup
+general:
+  productiveBranch: 'master'
+
+#Steps Specific Configuration
+steps:
+  mavenExecute:
+#    dockerImage: 'maven:3.5.0-jdk-8'
+    projectSettingsFile : ''
+    
+  checkFindbugs:
+    excludeFilterFile : excludeFilter.xml
+
+  deployToNeoWithCli:
+    dockerImage: 's4sdk/docker-neo-cli'
+
+#Stage Specific Configurations
+stages:
+  staticCodeChecks:
+
+    findbugsExcludesFile: excludeFilter.xml
+
+    findbugsExcludesFile: '' #Path to findbugs exclude file
+
+    pmdExcludes: '' # List or ANT style patterns
+  
+#steps:
+#checkFindbugs:
+#   excludeFilterFile : excludeFilter.xml
+
+#  integrationTests:
+#    credentials:
+#      - alias: ''
+#        credentialId: ''
+
+#  s4SdkQualityChecks:
+#    jacocoExcludes:
+#      - ''
+#    nonErpDestinations:
+#      - ''
+
+  productionDeployment:
+    forceDowntimeDeployment: true
+    cfTargets:
+      - org: 'P1713478936trial_trial'
+        space: 'dev'
+        apiEndpoint: 'api.cf.eu10.hana.ondemand.com'
+        appName: 'testapp'
+        credentialsId: 'PTRIAL'
+        manifest: 'manifest.yml'
+        deploymentType: 'standard'

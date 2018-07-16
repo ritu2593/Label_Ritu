@@ -1,0 +1,8 @@
+<FindBugsFilter>
+<Match>
+       <Class name="com.foobar.MyClass" />
+       <Method name="someMethod" />
+       <Bug pattern="IJU_NO_TESTS" />
+       <Priority value="2" />
+</Match>
+</FindBugsFilter>

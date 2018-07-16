@@ -1,0 +1,10 @@
+/.metadata/
+.project
+.settings
+**/credentials.*
+**/target/
+/s4hana_pipeline
+**/*.log
+**/*.trc
+application/scp
+application/.classpath

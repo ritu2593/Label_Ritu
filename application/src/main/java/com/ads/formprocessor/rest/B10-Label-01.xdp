@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="AdobeLiveCycleDesigner_V11.0.1.20140218.1.907162" APIVersion="3.6.13324.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2018-06-21T15:22:13Z" uuid="66875f4e-52aa-40f1-b8bb-367147426b67">
+<template xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
+   <?formServer defaultPDFRenderFormat acrobat10.0dynamic?>
+   <?formServer allowRenderCaching 0?>
+   <?formServer formModel both?>
+   <subform name="label" layout="tb" locale="en_US" restoreState="auto">
+      <pageSet name="Master-Page">
+         <pageArea name="Page1" id="Page1">
+            <contentArea x="0.25in" y="0.25in" w="576pt" h="756pt" name="Master-Content"/>
+            <medium stock="default" short="612pt" long="792pt"/>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform w="576pt" h="756pt" name="Design-view-cont">
+         <draw name="Rectangle1" w="60.325mm" h="25.4mm">
+            <value>
+               <rectangle>
+                  <edge/>
+                  <corner radius="5.08mm"/>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="Text1" y="3.175mm" x="3.175mm" w="0.641181in" h="9.525mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>PRT # CUST (P)</text>
+            </value>
+            <font size="6pt" typeface="Arial" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 43331 24166 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 6 PRT #  0 1417 6154 0 0 0 "Arial" 0 0 6000 ISO-8859-1?>
+            <?renderCache.textRun 8 CUST (P) 0 1417 13354 0 0 0 "Arial" 0 0 6000 ISO-8859-1?></draw>
+         <draw name="Rectangle1" x="60.325mm" w="41.275mm" h="25.4mm">
+            <value>
+               <rectangle>
+                  <edge/>
+                  <corner radius="5.08mm"/>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="Text1" y="15.875mm" x="62.23mm" w="12.7mm" h="9.525mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>QUANTITY
+(Q)</text>
+            </value>
+            <font size="6pt" typeface="Arial" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 33166 24166 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 9 QUANTITY  0 1417 6154 0 0 0 "Arial" 0 0 6000 ISO-8859-1?>
+            <?renderCache.textRun 3 (Q) 0 1417 13354 0 0 0 "Arial" 0 0 6000 ISO-8859-1?></draw>
+         <field name="MaterialbyCustomer" y="12.7mm" x="6.35mm" w="47.625mm" h="9.525mm" access="readOnly">
+            <ui>
+               <barcode type="code128" wideNarrowRatio="fixed" checksum="auto" textLocation="none" dataLength="0"/>
+            </ui>
+            <font typeface="Courier New"/>
+            <bind match="dataRef" ref="$.B10MasterLabel.MaterialbyCustomer"/>
+         </field>
+         <field y="3.175mm" x="19.05mm" w="41.275mm" h="9.525mm" name="MaterialbyCustomer" access="readOnly">
+            <ui>
+               <textEdit hScrollPolicy="off">
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font size="20pt" typeface="Arial" weight="bold"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <caption reserve="0.01in">
+               <para vAlign="middle"/>
+            </caption>
+            <bind match="dataRef" ref="$.B10MasterLabel.MaterialbyCustomer"/>
+            <value>
+               <text maxChars="8"/>
+            </value>
+         </field>
+         <field name="ActualDeliveryQuantity" y="3.175mm" x="66.675mm" w="28.575mm" h="9.525mm">
+            <ui>
+               <barcode type="code128" wideNarrowRatio="fixed" checksum="auto" textLocation="none" dataLength="0"/>
+            </ui>
+            <font typeface="Courier New"/>
+            <bind match="dataRef" ref="$.B10MasterLabel.ActualDeliveryQuantity"/>
+         </field>
+         <draw name="Rectangle1" w="60.325mm" h="25.4mm" y="25.4mm">
+            <value>
+               <rectangle>
+                  <edge/>
+                  <corner radius="5.08mm"/>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="Text1" y="28.575mm" x="3.175mm" w="0.641181in" h="9.525mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>P.O. # (K)</text>
+            </value>
+            <font size="6pt" typeface="Arial" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 43331 24166 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 10 P.O. # (K) 0 1417 6154 0 0 0 "Arial" 0 0 6000 ISO-8859-1?></draw>
+         <draw name="Rectangle1" x="60.325mm" w="41.275mm" h="25.4mm" y="25.4mm">
+            <value>
+               <rectangle>
+                  <edge/>
+                  <corner radius="5.08mm"/>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="Text1" y="28.575mm" x="63.5mm" w="12.7mm" h="6.35mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>DLOC</text>
+            </value>
+            <font size="6pt" typeface="Arial" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 33166 15166 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 4 DLOC 0 1417 6154 0 0 0 "Arial" 0 0 6000 ISO-8859-1?></draw>
+         <field name="OrderID" y="38.1mm" x="6.35mm" w="47.625mm" h="9.525mm">
+            <ui>
+               <barcode type="code128" wideNarrowRatio="fixed" checksum="auto" textLocation="none" dataLength="0"/>
+            </ui>
+            <font typeface="Courier New"/>
+            <bind match="dataRef" ref="$.B10MasterLabel.OrderID"/>
+         </field>
+         <field y="28.575mm" x="19.05mm" w="41.275mm" h="9.525mm" name="OrderID" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font size="20pt" typeface="Arial" weight="bold"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <caption reserve="0.01in">
+               <para vAlign="middle"/>
+            </caption>
+            <bind match="dataRef" ref="$.B10MasterLabel.OrderID"/>
+         </field>
+         <field y="34.925mm" x="63.5mm" w="38.1mm" h="9.525mm" access="readOnly" name="WarehouseGate">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font size="20pt" typeface="Arial" weight="bold"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <caption reserve="0.01in">
+               <para vAlign="middle"/>
+            </caption>
+            <bind match="dataRef" ref="$.B10MasterLabel.WarehouseGate"/>
+         </field>
+         <draw name="Rectangle1" w="60.325mm" h="25.4mm" y="50.8mm">
+            <value>
+               <rectangle>
+                  <edge/>
+                  <corner radius="5.08mm"/>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="Text1" y="53.975mm" x="3.175mm" w="0.641181in" h="9.525mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>SERIAL # MASTER (4S)</text>
+            </value>
+            <font size="6pt" typeface="Arial" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 43331 24166 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 9 SERIAL #  0 1417 6154 0 0 0 "Arial" 0 0 6000 ISO-8859-1?>
+            <?renderCache.textRun 11 MASTER (4S) 0 1417 13354 0 0 0 "Arial" 0 0 6000 ISO-8859-1?></draw>
+         <draw name="Rectangle1" x="60.325mm" w="41.275mm" h="25.4mm" y="50.8mm">
+            <value>
+               <rectangle>
+                  <edge/>
+                  <corner radius="5.08mm"/>
+               </rectangle>
+            </value>
+         </draw>
+         <field name="Code128BarCode1" y="63.5mm" x="6.35mm" w="47.625mm" h="9.525mm">
+            <ui>
+               <barcode type="code128" wideNarrowRatio="fixed" checksum="auto" textLocation="none" dataLength="8"/>
+            </ui>
+            <font typeface="Courier New"/>
+            <value>
+               <text>12345678</text>
+            </value>
+            <bind match="none"/>
+         </field>
+         <field name="TextField1" y="53.975mm" x="19.05mm" w="41.275mm" h="9.525mm" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font size="20pt" typeface="Arial" weight="bold"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <caption reserve="0.01in">
+               <para vAlign="middle"/>
+            </caption>
+            <bind match="none"/>
+            <value>
+               <text>12345678</text>
+            </value>
+         </field>
+         <draw name="Rectangle1" w="60.325mm" h="25.4mm" y="76.2mm">
+            <value>
+               <rectangle>
+                  <edge/>
+                  <corner radius="5.08mm"/>
+               </rectangle>
+            </value>
+         </draw>
+         <draw name="Rectangle1" x="60.325mm" w="41.275mm" h="25.4mm" y="76.2mm">
+            <value>
+               <rectangle>
+                  <edge/>
+                  <corner radius="5.08mm"/>
+               </rectangle>
+            </value>
+         </draw>
+         <field name="ReceivingPlant" y="60.325mm" x="63.5mm" w="38.1mm" h="9.525mm" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font size="20pt" typeface="Arial" weight="bold"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <caption reserve="0.01in">
+               <para vAlign="middle"/>
+            </caption>
+            <bind match="dataRef" ref="$.B10MasterLabel.ReceivingPlant"/>
+         </field>
+         <draw name="Text1" y="53.975mm" x="63.5mm" w="12.7mm" h="6.35mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>PLC/DOCK</text>
+            </value>
+            <font size="6pt" typeface="Arial" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 33166 15166 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 8 PLC/DOCK 0 1417 6154 0 0 0 "Arial" 0 0 6000 ISO-8859-1?></draw>
+         <draw name="Text2" y="85.09mm" x="3.175mm" w="57.15mm" h="10.172mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>MASTER LABEL</text>
+            </value>
+            <font size="20pt" typeface="Arial" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 159166 26000 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 12 MASTER LABEL 0 1417 17208 0 0 0 "Arial" 0 0 20000 ISO-8859-1?></draw>
+         <field name="AccountByCustomer" y="83.693mm" x="60.325mm" w="41.275mm" h="9.525mm" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Arial" weight="bold" size="9pt"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <caption reserve="18.8407mm">
+               <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+               <value>
+                  <text>SUPPLIER ID:</text>
+               </value>
+               <font typeface="Arial" weight="bold" size="7pt" baselineShift="0pt"/>
+            </caption>
+            <bind match="dataRef" ref="$.B10MasterLabel.AccountByCustomer"/>
+         </field>
+         <?templateDesigner expand 0?>
+         <bind match="none"/>
+         <field name="ActualDeliveryQuantity" y="15.875mm" x="73.025mm" w="28.575mm" h="9.525mm" access="readOnly">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Arial" size="20pt" weight="bold"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <caption reserve="0.01in">
+               <para vAlign="middle"/>
+            </caption>
+            <bind match="dataRef" ref="$.B10MasterLabel.ActualDeliveryQuantity"/>
+         </field>
+      </subform>
+      <proto/>
+      <desc>
+         <text name="version">11.0.1.20140218.1.907162.903801</text>
+      </desc>
+      <?templateDesigner Hyphenation excludeInitialCap:1, excludeAllCaps:1, wordCharCnt:7, remainCharCnt:3, pushCharCnt:3?>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 100 25 00030006000B000C00110012001700240025002600270028002C002E002F003000310032003300340035003600370038003C #()./4ABCDEIKLMNOPQRSTUY?>
+      <?renderCache.subset "Arial" 1 0 ISO-8859-1 4 72 18 0003001400150016001700180019001A001B001D00270028002C002F0033003500360038 12345678:DEILPRSU?>
+      <?renderCache.subset "Courier New" 0 0 ISO-8859-1 4 32 8 001400150016001700180019001A001B12345678?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner WidowOrphanControl 0?>
+   <?templateDesigner Grid show:1, snap:1, units:0, color:ff8080, origin:(0,0), interval:(125000,125000), objsnap:0, guidesnap:0, pagecentersnap:0?>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-template/3.3/?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?templateDesigner DefaultRunAt client?>
+   <?acrobat JavaScript strictScoping?>
+   <?PDFPrintOptions embedViewerPrefs 0?>
+   <?PDFPrintOptions embedPrintOnFormOpen 0?>
+   <?PDFPrintOptions scalingPrefs 0?>
+   <?PDFPrintOptions enforceScalingPrefs 0?>
+   <?PDFPrintOptions paperSource 0?>
+   <?PDFPrintOptions duplexMode 0?>
+   <?templateDesigner DefaultPreviewType interactive?>
+   <?templateDesigner DefaultPreviewPagination simplex?>
+   <?templateDesigner XDPPreviewFormat 20?>
+   <?templateDesigner DefaultPreviewDataFileName .\data-main.xml?>
+   <?templateDesigner DefaultCaptionFontSettings face:Myriad Pro;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Myriad Pro;size:10;weight:normal;style:normal?>
+   <?templateDesigner FormTargetVersion 33?>
+   <?templateDesigner Zoom 127?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:0, crosshairs:0?>
+   <?templateDesigner SaveTaggedPDF 0?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 0?>
+   <?templateDesigner SavePDFWithLog 0?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <tagged>0</tagged>
+         <fontInfo>
+            <embed>0</embed>
+         </fontInfo>
+         <version>1.7</version>
+         <adobeExtensionLevel>8</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <script>
+         <runScripts>server</runScripts>
+      </script>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+</config>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale name="en_US" desc="English (United States)">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, MMMM D, YYYY</datePattern>
+         <datePattern name="long">MMMM D, YYYY</datePattern>
+         <datePattern name="med">MMM D, YYYY</datePattern>
+         <datePattern name="short">M/D/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99|($z,zz9.99)</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">USD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="label">
+      <label>
+         <B10MasterLabel>
+            <MaterialbyCustomer/>
+            <ActualDeliveryQuantity/>
+            <OrderID/>
+            <WarehouseGate/>
+            <ReceivingPlant/>
+            <AccountByCustomer/>
+         </B10MasterLabel>
+      </label>
+   </dd:dataDescription>
+</xfa:datasets>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xmlConnection name="DataConnection" dataDescription="label">
+      <uri>.\data-main.xml</uri>
+      <?templateDesigner fileDigest shaHash="vyI1XHEAzRE2GuFn2VxADno72sw="?></xmlConnection>
+</connectionSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.4-c005 78.150055, 2013/08/07-22:58:47        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <xmp:MetadataDate>2018-06-21T15:22:13Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer 11.0</xmp:CreatorTool>
+         <pdf:Producer>Adobe LiveCycle Designer 11.0</pdf:Producer>
+         <xmpMM:DocumentID>uuid:66875f4e-52aa-40f1-b8bb-367147426b67</xmpMM:DocumentID>
+         <xmpMM:InstanceID>uuid:acd2bc91-100c-4ab5-8eb3-6ca42266fe73</xmpMM:InstanceID>
+         <dc:format>application/pdf</dc:format>
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>11.0.1.20140218.1.907162.903801</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+<xfdf xmlns="http://ns.adobe.com/xfdf/" xml:space="preserve">
+   <annots/>
+</xfdf></xdp:xdp>
